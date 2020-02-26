@@ -91,9 +91,7 @@ function initBuffers(gl) {
   // shape. We do this by creating a Float32Array from the
   // JavaScript array, then use it to fill the current buffer.
 
-  gl.bufferData(gl.ARRAY_BUFFER,
-                new Float32Array(positions),
-                gl.STATIC_DRAW);
+  gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(positions), gl.STATIC_DRAW);
 
   return {
     position: positionBuffer,
@@ -146,7 +144,7 @@ function drawScene(gl, programInfo, buffers) {
                  [-0.0, 0.0, -6.0]);  // amount to translate
 
   // Tell WebGL how to pull out the positions from the position
-  // buffer into the vertexPosition attribute.
+  // buffer into the vertexPosition attribute
   {
     const numComponents = 2;
     const type = gl.FLOAT;
