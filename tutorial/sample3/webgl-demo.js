@@ -103,7 +103,7 @@ function initBuffers(gl) {
 
   // Now set up the colors for the vertices
 
-  var colors = [
+  const colors = [
     1.0,  1.0,  1.0,  1.0,    // white
     1.0,  0.0,  0.0,  1.0,    // red
     0.0,  1.0,  0.0,  1.0,    // green
